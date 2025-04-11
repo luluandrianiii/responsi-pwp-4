@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: rgb(213, 156, 241);
+    color: navajowhite;
+}
+
+.nav-link{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.nav-link li a{
+    transition: color 0.3s ease;
+}
+
+.nav-link li a:hover{
+    color: rgb(176, 117, 205);
+}
