@@ -1,38 +1,173 @@
-*{
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(252, 252, 250);
 }
 
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background: rgb(213, 156, 241);
-    color: navajowhite;
+/* Header */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  background-image: linear-gradient(to bottom right, rgb(84, 84, 90),rgba(101, 154, 91, 0.951) );
+  opacity: 0.9;
+
 }
 
-.nav-link{
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
+/* Bagian Logo */
+.logo{
+  color: white;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  transition: color 0.3s ease ;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
 }
 
-.nav-link li a{
-    transition: color 0.3s ease;
+.logo:hover{
+  transform: scale(1.05);
 }
 
-.nav-link li a:hover{
-    color: rgb(176, 117, 205);
+/* Ikon Menu */
+#menu-icon{
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#menu-icon:hover{
+  transform: scale(1.05);
+}
+
+/* Bagian Menu List*/
+
+.nav-link {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav-link li a {
+  transition: color 0.3s ease;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-link li a:hover {
+  color: rgb(31, 26, 34);
+  
+}
+
+.nav-link li a:active{
+  color: bisque;
+}
+
+/* Beranda Section  */
+
+.beranda{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+
+.profile img{
+  height:350px;
+  width:350px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(101, 154, 91, 0.951);
+  cursor: pointer;
+  animation: floatImage 4s ease-in-out;
+  transition: 0.4s ease;
+}
+
+.profile img:hover{
+  box-shadow: 0 0 25px rgba(101, 154, 91, 0.951),
+              0 0 35px rgba(101, 154, 91, 0.951);
+}
+
+.beranda-konten{
+  margin-left: 3cm;
+}
+
+.beranda-konten h3{
+  font-size: 20px ;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: rgb(17, 44, 14);
+}
+
+.beranda-konten h1{
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+  color: rgb(52, 95, 48);
+}
+
+.beranda-konten p{
+  font-size: 15px;
+  margin-top: 5px;
+  color: rgb(17, 44, 14);
+}
+
+.sosial-media a{
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 0.5px solid rgb(52, 95, 48);
+  border-radius: 50%;
+  font-size: 20px;
+  color: rgb(52, 95, 48);
+  transition: 0.5s ease;
+  margin: 3px 3px 3px;
+}
+
+.sosial-media a:hover{
+  transform: scale(1.2);
+  background-color: rgb(52, 95, 48) ;
+  color: rgb(213, 227, 212);
+  box-shadow: 0 0 25px rgb(52, 95, 48);
+}
+
+.btn{
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  background:rgb(17, 44, 14) ;
+  border-radius: 20px;
+  box-shadow: none;
+  font-size: 15px;
+  color: rgb(213, 227, 212);
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  transform: scale(1.05);
+  background-color: rgb(52, 95, 48) ;
+  color: rgb(213, 227, 212);
+  box-shadow: 0 0 20px rgb(52, 95, 48);
 }
