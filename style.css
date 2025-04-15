@@ -345,7 +345,7 @@ header {
   position: relative;
 }
 
-@media (maxwidth: 768px) {
+@media (max-width: 768px) {
   .karya-box {
     width: 90%;
   }
