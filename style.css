@@ -102,13 +102,25 @@ header {
   border-radius: 50%;
   box-shadow: 0 0 25px rgba(101, 154, 91, 0.951);
   cursor: pointer;
-  animation: floatImage 4s ease-in-out;
+  animation: floatImage 4s ease-in-out infinite;
   transition: 0.4s ease;
 }
 
 .profile img:hover {
   box-shadow: 0 0 25px rgba(101, 154, 91, 0.951),
     0 0 35px rgba(101, 154, 91, 0.951);
+}
+
+@keyframes floatImage{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-25px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 
 .beranda-konten {
@@ -375,7 +387,119 @@ header {
 }
 
 .karya-box:hover {
-  transform: scale(1.5);
+  transform: scale(1.09);
   transition: all, 0.5s;
   z-index: 10;
 }
+
+/* Kontak */
+.kontak {
+  cursor: pointer;
+}
+
+.heading-kontak {
+  font-size: 25px;
+  color: rgb(52, 95, 48);
+  text-align: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.heading-kontak:hover {
+  transform: scale(1.05);
+  color: rgb(17, 44, 14);
+}
+
+.heading-kontak span {
+  color: rgb(17, 44, 14);
+}
+
+
+.kontak h2 {
+  margin-bottom: 5px;
+  color: rgb(52, 95, 48);
+}
+
+.kontak form {
+  max-width: 600px;
+  margin: 10px auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.kontak form .input-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.kontak form .input-box input .kontak form textarea{
+  width: 100%;
+  padding: 20px;
+  font-size: 30px;
+  color:rgb(17, 44, 14) ;
+  border-radius: 10px;
+  border: 50px solid rgb(17, 44, 14);
+  margin: 10px 0;
+  resize: none;
+}
+
+.kontak form .input-box input{
+  width: 49%;
+  margin: 10px 5px;
+}
+
+.kontak form .btn{
+  margin-top: 5px;
+}
+
+/* Footer */
+
+.footer{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color:rgba(211, 250, 166, 0.69);
+}
+
+.footer .sosial-media{
+  text-align: center;
+  padding-bottom: 25px;
+  color:rgb(17, 44, 14);
+}
+
+.footer .sosial-media a{
+  font-size: 25px;
+  color:rgb(17, 44, 14);
+  border: 2px solid rgb(52, 95, 48);
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+  border-radius:50%;
+  margin: 0 10px;
+  transition: 0.3s ease;
+}
+
+.footer .sosial-media a:hover{
+  transform: scale(1.2);
+  background-color: rgb(52, 95, 48);
+  color: rgb(213, 227, 212);
+  box-shadow: 0 0 25px rgb(52, 95, 48);
+}
+
+.footer p{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(17, 44, 14);
+}
+
+.kredit a{
+  font-size: 16px;
+  color: rgb(17, 44, 14)
+}
+
+
+
